@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Tawsil - Service de Livraison & Logistique au Bénin pour E-commerçants</title>
+  <meta name="title" content="Tawsil - Service de Livraison & Logistique au Bénin pour E-commerçants">
+  <meta name="description" content="Tawsil est la référence en logistique, stockage et livraison Cash on Delivery (COD) au Bénin pour les e-commerçants internationaux. Contact direct et réactif sur WhatsApp.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-icon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header" id="main-header">
+    <div class="container header-container">
+      
+      <a href="#" class="brand-logo" id="logo-link">
+        <img src="./assets/logo-icon.png" alt="Tawsil Logo" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">TAWSIL</span>
+          <span class="brand-tagline">LIVRAISON BÉNIN</span>
+        </div>
+      </a>
+
+      <div class="status-pill" id="status-indicator">
+        <span class="status-dot"></span>
+        <span>Opérationnel au Bénin 🇧🇯</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="#comment-ca-marche" class="nav-link" id="nav-process">Comment ça marche</a></li>
+          <li><a href="#temoignages" class="nav-link" id="nav-testimonials">Témoignages</a></li>
+          <li><a href="#faq" class="nav-link" id="nav-faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-whatsapp js-whatsapp-btn desktop-only" id="header-whatsapp-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path d="M12.031 2c-5.517 0-9.993 4.476-9.993 9.994 0 1.763.459 3.486 1.332 5.006l-1.417 5.176 5.297-1.389c1.464.798 3.117 1.217 4.781 1.217 5.517 0 9.993-4.476 9.993-9.994 0-5.517-4.476-9.994-9.993-9.994zm5.795 14.195c-.244.688-1.428 1.309-1.972 1.393-.544.085-1.253.119-2.02-.132-.464-.153-1.056-.349-1.834-.686-3.237-1.401-5.341-4.664-5.502-4.88-.162-.216-1.31-1.745-1.31-3.328 0-1.583.829-2.361 1.124-2.684.295-.323.644-.404.858-.404.215 0 .43.003.617.012.197.01.464-.075.727.556.273.655.932 2.274.1013 2.438.081.163.136.353.028.568-.109.215-.163.35-.325.539-.163.189-.343.421-.147.757.196.336.872 1.439 1.875 2.333 1.29 1.149 2.378 1.506 2.714 1.674.336.168.533.14.73-.087.197-.227.846-.986 1.072-1.323.227-.336.454-.28.761-.168.307.112 1.954.921 2.291 1.089.336.168.56.252.644.393.084.14.084.812-.16 1.501z"/>
+          </svg>
+          <span>Contact WhatsApp</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="js-mobile-menu-toggle" aria-label="Menu principal mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER OVERLAY -->
+  <div class="mobile-drawer-overlay" id="js-mobile-drawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <img src="./assets/logo-icon.png" alt="Tawsil Logo" class="brand-logo-img">
+          <div class="brand-logo-text">
+            <span class="brand-name">TAWSIL</span>
+            <span class="brand-tagline">LIVRAISON BÉNIN</span>
+          </div>
+        </div>
+        <button class="mobile-drawer-close" id="js-mobile-drawer-close">&times;</button>
+      </div>
+
+      <div class="status-pill mobile-status-pill">
+        <span class="status-dot"></span>
+        <span>Opérationnel au Bénin 🇧🇯</span>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#comment-ca-marche" class="mobile-nav-link">Comment ça marche</a></li>
+        <li><a href="#temoignages" class="mobile-nav-link">Témoignages</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <a href="#" class="btn btn-whatsapp btn-whatsapp-lg js-whatsapp-btn" style="width: 100%; justify-content: center;">
+          <svg class="btn-icon" viewBox="0 0 24 24" style="width: 22px; height: 22px;">
+            <path d="M12.031 2c-5.517 0-9.993 4.476-9.993 9.994 0 1.763.459 3.486 1.332 5.006l-1.417 5.176 5.297-1.389c1.464.798 3.117 1.217 4.781 1.217 5.517 0 9.993-4.476 9.993-9.994 0-5.517-4.476-9.994-9.993-9.994zm5.795 14.195c-.244.688-1.428 1.309-1.972 1.393-.544.085-1.253.119-2.02-.132-.464-.153-1.056-.349-1.834-.686-3.237-1.401-5.341-4.664-5.502-4.88-.162-.216-1.31-1.745-1.31-3.328 0-1.583.829-2.361 1.124-2.684.295-.323.644-.404.858-.404.215 0 .43.003.617.012.197.01.464-.075.727.556.273.655.932 2.274.1013 2.438.081.163.136.353.028.568-.109.215-.163.35-.325.539-.163.189-.343.421-.147.757.196.336.872 1.439 1.875 2.333 1.29 1.149 2.378 1.506 2.714 1.674.336.168.533.14.73-.087.197-.227.846-.986 1.072-1.323.227-.336.454-.28.761-.168.307.112 1.954.921 2.291 1.089.336.168.56.252.644.393.084.14.084.812-.16 1.501z"/>
+          </svg>
+          <span>Discuter sur WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero-section">
+      <div class="hero-particle p1"></div>
+      <div class="hero-particle p2"></div>
+      <div class="hero-particle p3"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge" id="hero-badge">
+            <span>🇧🇯 Partenaire de confiance des e-commerçants au Bénin</span>
+          </div>
+
+          <h1 class="hero-title" id="main-heading">
+            Vendez au Bénin.<br>
+            <span>Tawsil stocke, livre et encaisse pour vous.</span>
+          </h1>
+
+          <p class="hero-subtitle" id="hero-description">
+            Vous êtes e-commerçant à l'étranger ? Confiez-nous vos produits à Cotonou. Nous gérons le stockage sécurisé, la livraison express dernier kilomètre et le rapatriement de votre Cash on Delivery (COD) directement vers vous.
+          </p>
+
+          <div class="hero-cta-box">
+            <a href="#" class="btn btn-whatsapp btn-whatsapp-lg js-whatsapp-btn" id="hero-whatsapp-cta" data-message="Bonjour Tawsil ! Je suis e-commerçant et souhaite discuter de la livraison et gestion COD de mes produits au Bénin.">
+              <svg class="btn-icon" viewBox="0 0 24 24" style="width: 26px; height: 26px;">
+                <path d="M12.031 2c-5.517 0-9.993 4.476-9.993 9.994 0 1.763.459 3.486 1.332 5.006l-1.417 5.176 5.297-1.389c1.464.798 3.117 1.217 4.781 1.217 5.517 0 9.993-4.476 9.993-9.994 0-5.517-4.476-9.994-9.993-9.994zm5.795 14.195c-.244.688-1.428 1.309-1.972 1.393-.544.085-1.253.119-2.02-.132-.464-.153-1.056-.349-1.834-.686-3.237-1.401-5.341-4.664-5.502-4.88-.162-.216-1.31-1.745-1.31-3.328 0-1.583.829-2.361 1.124-2.684.295-.323.644-.404.858-.404.215 0 .43.003.617.012.197.01.464-.075.727.556.273.655.932 2.274.1013 2.438.081.163.136.353.028.568-.109.215-.163.35-.325.539-.163.189-.343.421-.147.757.196.336.872 1.439 1.875 2.333 1.29 1.149 2.378 1.506 2.714 1.674.336.168.533.14.73-.087.197-.227.846-.986 1.072-1.323.227-.336.454-.28.761-.168.307.112 1.954.921 2.291 1.089.336.168.56.252.644.393.084.14.084.812-.16 1.501z"/>
+              </svg>
+              <span>Discuter avec Tawsil sur WhatsApp</span>
+            </a>
+
+            <div class="hero-subtext">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Réponse garantie en moins de 5 minutes • Support 7j/7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper reveal reveal-delay-2">
+          <div class="hero-image-card">
+            <img src="./assets/hero.png" alt="Tawsil Logistique et livraison express e-commerce au Bénin">
+            
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon">📍</div>
+              <div>
+                <div>Entrepôt Cotonou</div>
+                <div style="font-size: 11px; color: #64748b; font-weight: 500;">Stockage Sécurisé</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon">💵</div>
+              <div>
+                <div>Recouvrement COD</div>
+                <div style="font-size: 11px; color: #10b981; font-weight: 600;">Reversement 24H</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS STRIP -->
+    <div class="container">
+      <div class="stats-strip reveal" id="stats-section">
+        <div class="stats-grid">
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-number" data-target="150" data-prefix="+">+150</div>
+            <div class="stat-label">E-commerçants Partenaires</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-number" data-target="98.5" data-suffix="%" data-decimals="1">98.5%</div>
+            <div class="stat-label">Taux de Livraison Réussie</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-number" data-target="24" data-prefix="< " data-suffix="H">&lt; 24H</div>
+            <div class="stat-label">Rapatriement des Fonds COD</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label">Suivi WhatsApp en Direct</div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Nos Solutions Logistiques</span>
+          <h2 class="section-title">Tout ce dont votre e-commerce a besoin au Bénin</h2>
+          <p class="section-subtitle">Un service clé en main pensé spécifiquement pour les vendeurs internationaux expédiant au Bénin.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card reveal reveal-delay-1" id="service-storage">
+            <div class="service-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Stockage & Preparation à Cotonou</h3>
+            <p class="service-desc">
+              Expédiez vos marchandises dans notre entrepôt sécurisé à Cotonou. Nous gérons la réception, le contrôle qualité et la préparation minutieuse des colis.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Entrepôt sécurisé 24/7 à Cotonou</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Inventaire en temps réel via WhatsApp</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card reveal reveal-delay-2" id="service-delivery">
+            <div class="service-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Livraison Express Dernier Kilomètre</h3>
+            <p class="service-desc">
+              Livraison rapide le jour même à Cotonou, Calavi, Porto-Novo et en 24h à 48h dans toutes les grandes villes du Bénin (Parakou, Bohicon, Natitingou).
+            </p>
+            <ul class="service-features">
+              <li class="service-feature">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Flotte de livreurs courtois & équipés</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Confirmation téléphonique des clients</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card reveal reveal-delay-3" id="service-cod">
+            <div class="service-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Cash on Delivery & Rapatriement</h3>
+            <p class="service-desc">
+              Nous encaisons les fonds en espèces ou par Mobile Money lors de la remise du colis, puis nous transférons directement vos revenus sur votre compte.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Reversement ultra-rapide sous 24h</span>
+              </li>
+              <li class="service-feature">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Virement international / Mobile Money</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-it-works" id="comment-ca-marche">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Processus Simplicité</span>
+          <h2 class="section-title">Comment travailler avec Tawsil en 4 étapes</h2>
+          <p class="section-subtitle">Pas d'usines à gaz. Un processus direct et transparent piloté par WhatsApp.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal reveal-delay-1">
+            <div class="step-number">1</div>
+            <h4 class="step-title">Contact WhatsApp</h4>
+            <p class="step-desc">Cliquez sur le bouton WhatsApp et échangez immédiatement avec notre équipe sur vos besoins et volumes.</p>
+          </div>
+
+          <div class="step-card reveal reveal-delay-2">
+            <div class="step-number">2</div>
+            <h4 class="step-title">Envoi du Stock</h4>
+            <p class="step-desc">Vous nous expédiez vos produits à notre entrepôt de Cotonou. Nous réceptionnons et comptabilisons votre stock.</p>
+          </div>
+
+          <div class="step-card reveal reveal-delay-3">
+            <div class="step-number">3</div>
+            <h4 class="step-title">Livraison & COD</h4>
+            <p class="step-desc">À chaque commande, nous contactons le client, livrons le colis et encaisons le paiement COD.</p>
+          </div>
+
+          <div class="step-card reveal reveal-delay-4">
+            <div class="step-number">4</div>
+            <h4 class="step-title">Reversement</h4>
+            <p class="step-desc">Vous recevez un bilan de livraison clair et nous vous transférons la totalité de vos encaissements sous 24h.</p>
+          </div>
+        </div>
+
+        <!-- WHATSAPP CONFIG BAR -->
+        <div class="config-bar">
+          <div class="config-info">
+            <h4>Besoin de nous contacter directement sur WhatsApp ?</h4>
+            <p>Notre équipe logistique est disponible pour répondre à toutes vos questions.</p>
+          </div>
+          <div class="config-action">
+            <button class="btn btn-whatsapp js-whatsapp-btn" id="config-whatsapp-btn">
+              <span>Écrire sur WhatsApp</span>
+            </button>
+            <button class="btn btn-secondary" id="js-copy-number">
+              <span>Copier le numéro</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials-section" id="temoignages">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Témoignages Vendeurs</span>
+          <h2 class="section-title">Ce que disent les e-commerçants de la sous-région</h2>
+          <p class="section-subtitle">Découvrez comment Tawsil accélère le chiffre d'affaires et sécurise les livraisons des vendeurs transfrontaliers au Bénin.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-header">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <h4 class="author-name">Aminata Koné <span class="country-flag">🇨🇮</span></h4>
+                <div class="author-role">Maison K. Cosmétiques • Abidjan, Côte d'Ivoire</div>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="verified-badge">✓ E-commerçante Vérifiée</span>
+            </div>
+            <p class="testimonial-quote">
+              « Avant Tawsil, le rapatriement de nos encaissements COD depuis Cotonou prenait des semaines. Avec Tawsil, le paiement est récupéré le jour même et viré sur notre compte bancaire sous 24h. Un vrai levier de croissance ! »
+            </p>
+            <div class="testimonial-metric">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>1 200+ colis</strong> livrés avec succès à Cotonou & Calavi</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-header">
+              <div class="author-avatar" style="background-color: #1e293b; color: #34d399;">MD</div>
+              <div class="author-info">
+                <h4 class="author-name">Mamadou Diallo <span class="country-flag">🇸🇳</span></h4>
+                <div class="author-role">Dakar Sneakers Hub • Dakar, Sénégal</div>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="verified-badge">✓ E-commerçant Vérifié</span>
+            </div>
+            <p class="testimonial-quote">
+              « Nous envoyons nos conteneurs directement dans l'entrepôt Tawsil à Cotonou. Leur équipe appelle et confirme chaque client béninois avant la livraison. Notre taux de retour a chuté de 25% à moins de 3% ! »
+            </p>
+            <div class="testimonial-metric">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>950+ paires</strong> stockées & expédiées sans accroc</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal reveal-delay-3">
+            <div class="testimonial-header">
+              <div class="author-avatar" style="background-color: #059669; color: #ffffff;">EA</div>
+              <div class="author-info">
+                <h4 class="author-name">Edem Agbodjan <span class="country-flag">🇹🇬</span></h4>
+                <div class="author-role">TechExpress WA • Lomé, Togo</div>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="verified-badge">✓ E-commerçant Vérifié</span>
+            </div>
+            <p class="testimonial-quote">
+              « La réactivité sur WhatsApp est fantastique. Dès qu'un client passe commande à Cotonou ou Parakou, le colis part immédiatement. Les transferts d'argent vers le Togo se font sans aucun retard. »
+            </p>
+            <div class="testimonial-metric">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>Reversement COD &lt; 24H</strong> garanti chaque semaine</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card reveal reveal-delay-4">
+            <div class="testimonial-header">
+              <div class="author-avatar" style="background-color: #0f172a; color: #10b981;">OT</div>
+              <div class="author-info">
+                <h4 class="author-name">Oumar Traoré <span class="country-flag">🇲🇱</span></h4>
+                <div class="author-role">Bamako Bazin & Mode • Bamako, Mali</div>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="verified-badge">✓ E-commerçant Vérifié</span>
+            </div>
+            <p class="testimonial-quote">
+              « Expédier nos tissus et collections Bazin au Bénin était très complexe avant de connaître Tawsil. Ils gèrent la réception à Cotonou, la livraison et le rapatriement de l'argent vers Bamako en toute sécurité. »
+            </p>
+            <div class="testimonial-metric">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>+2 800 000 FCFA</strong> de COD rapatrié / mois</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQ E-commerçants</span>
+          <h2 class="section-title">Questions fréquentes</h2>
+          <p class="section-subtitle">Retrouvez les réponses aux interrogations des vendeurs internationaux.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Comment se déroule le rapatriement des fonds d'encaissement (COD) ?</span>
+              <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Après chaque journée de livraison, nous faisons le bilan de vos encaissements en espèces et par Mobile Money. Nous vous transférons vos fonds par Virement bancaire, Mobile Money international (MTN/Moov) ou la solution de votre choix sous 24h à 48h.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Livrez-vous dans toutes les villes du Bénin ?</span>
+              <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Oui ! Nous assurons la livraison le jour même sur le Grand Cotonou (Cotonou, Abomey-Calavi, Porto-Novo) et en 24h/48h sur Parakou, Bohicon, Abomey, Natitingou et l'ensemble du territoire béninois.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Comment suivre le stock de mes produits chez Tawsil ?</span>
+              <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Nous vous fournissons un rapport quotidien transparent sur votre groupe WhatsApp dédié : entrées de stock, colis en cours de livraison, colis livrés/encaissés et retours éventuels.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quels sont les tarifs de livraison et de stockage ?</span>
+              <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Nos tarifs sont ultra-compétitifs et s'adaptent à vos volumes. Contactez-nous directement sur WhatsApp pour recevoir notre grille tarifaire personnalisée.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA BANNER -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 class="cta-banner-title">Prêt à développer vos ventes e-commerce au Bénin ?</h2>
+          <p class="cta-banner-desc">Discutez immédiatement avec un conseiller Tawsil sur WhatsApp. Nous sommes prêts à prendre en charge votre premier colis.</p>
+          <a href="#" class="btn btn-whatsapp-lg js-whatsapp-btn" id="banner-whatsapp-btn" data-message="Bonjour Tawsil ! Je souhaite commencer à expédier mes produits avec vous au Bénin.">
+            <svg class="btn-icon" viewBox="0 0 24 24" style="width: 28px; height: 28px;">
+              <path fill="currentColor" d="M12.031 2c-5.517 0-9.993 4.476-9.993 9.994 0 1.763.459 3.486 1.332 5.006l-1.417 5.176 5.297-1.389c1.464.798 3.117 1.217 4.781 1.217 5.517 0 9.993-4.476 9.993-9.994 0-5.517-4.476-9.994-9.993-9.994zm5.795 14.195c-.244.688-1.428 1.309-1.972 1.393-.544.085-1.253.119-2.02-.132-.464-.153-1.056-.349-1.834-.686-3.237-1.401-5.341-4.664-5.502-4.88-.162-.216-1.31-1.745-1.31-3.328 0-1.583.829-2.361 1.124-2.684.295-.323.644-.404.858-.404.215 0 .43.003.617.012.197.01.464-.075.727.556.273.655.932 2.274.1013 2.438.081.163.136.353.028.568-.109.215-.163.35-.325.539-.163.189-.343.421-.147.757.196.336.872 1.439 1.875 2.333 1.29 1.149 2.378 1.506 2.714 1.674.336.168.533.14.73-.087.197-.227.846-.986 1.072-1.323.227-.336.454-.28.761-.168.307.112 1.954.921 2.291 1.089.336.168.56.252.644.393.084.14.084.812-.16 1.501z"/>
+            </svg>
+            <span>Démarrer sur WhatsApp maintenant</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="./assets/logo-icon.png" alt="Tawsil Logo" class="brand-logo-img">
+            <div class="brand-logo-text">
+              <span class="brand-name" style="color: #ffffff;">TAWSIL</span>
+              <span class="brand-tagline">LIVRAISON BÉNIN</span>
+            </div>
+          </div>
+          <p>La solution n°1 de stockage, livraison et encaissement Cash on Delivery au Bénin pour les e-commerçants internationaux et transfrontaliers.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Stockage Cotonou</a></li>
+            <li><a href="#services">Livraison Express</a></li>
+            <li><a href="#services">Recouvrement COD</a></li>
+            <li><a href="#services">Gestion des Retours</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Entreprise</h4>
+          <ul class="footer-links">
+            <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#" class="js-whatsapp-btn">Contact WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Siège Bénin</h4>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.6;">
+            📍 Quartier Haie Vive, Cotonou, République du Bénin<br>
+            💬 WhatsApp: +229 69 25 91 73<br>
+            ⏱️ Lundi - Samedi: 08h00 - 19h00
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tawsil Logistics Bénin. Tous droits réservés.</div>
+        <div>Fait avec précision pour l'e-commerce en Afrique de l'Ouest 🇧🇯</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="#" class="floating-whatsapp js-whatsapp-btn" id="floating-whatsapp-widget" title="Discuter avec Tawsil sur WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M12.031 2c-5.517 0-9.993 4.476-9.993 9.994 0 1.763.459 3.486 1.332 5.006l-1.417 5.176 5.297-1.389c1.464.798 3.117 1.217 4.781 1.217 5.517 0 9.993-4.476 9.993-9.994 0-5.517-4.476-9.994-9.993-9.994zm5.795 14.195c-.244.688-1.428 1.309-1.972 1.393-.544.085-1.253.119-2.02-.132-.464-.153-1.056-.349-1.834-.686-3.237-1.401-5.341-4.664-5.502-4.88-.162-.216-1.31-1.745-1.31-3.328 0-1.583.829-2.361 1.124-2.684.295-.323.644-.404.858-.404.215 0 .43.003.617.012.197.01.464-.075.727.556.273.655.932 2.274.1013 2.438.081.163.136.353.028.568-.109.215-.163.35-.325.539-.163.189-.343.421-.147.757.196.336.872 1.439 1.875 2.333 1.29 1.149 2.378 1.506 2.714 1.674.336.168.533.14.73-.087.197-.227.846-.986 1.072-1.323.227-.336.454-.28.761-.168.307.112 1.954.921 2.291 1.089.336.168.56.252.644.393.084.14.084.812-.16 1.501z"/>
+    </svg>
+    <span>Besoin d'aide ? WhatsApp</span>
+  </a>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "tawsil-logistics-benin",
+  "version": "1.0.0",
+  "description": "Landing page et plateforme logistique pour Tawsil Bénin",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve -l 3000 .",
+    "start": "serve -l 3000 ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
