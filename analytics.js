@@ -75,6 +75,11 @@ function initEventTracking() {
   const copyBtn = document.getElementById("js-copy-number");
   if (copyBtn) copyBtn.addEventListener("click", () => trackEvent("copy_phone_number"));
 
+  // Clics vers la plateforme partenaires (inscription, connexion)
+  document.querySelectorAll(".js-platform-btn").forEach(link => {
+    link.addEventListener("click", () => trackEvent("platform_click", { location: link.getAttribute("data-cta") || "inconnu" }));
+  });
+
   // Navigation
   document.querySelectorAll(".nav-link, .mobile-nav-link, .footer-links a[href^='#']").forEach(link => {
     link.addEventListener("click", () => trackEvent("nav_click", { target: link.getAttribute("href") }));
