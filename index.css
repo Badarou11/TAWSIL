@@ -1538,3 +1538,20 @@ a {
   padding: 18px 36px;
   font-size: 18px;
 }
+
+/* Correctifs en-tête et menu mobile */
+.brand-logo-text,
+.brand-name,
+.brand-tagline {
+  white-space: nowrap;
+}
+
+/* La pastille « Opérationnel » ne tient plus dans l'en-tête avec le bouton « Espace partenaires » : elle reste dans le menu mobile */
+.status-pill:not(.mobile-status-pill) {
+  display: none !important;
+}
+
+/* Le bouton WhatsApp flottant ne doit pas masquer les boutons du menu mobile ouvert */
+.mobile-drawer-overlay.active ~ .floating-whatsapp {
+  display: none !important;
+}
